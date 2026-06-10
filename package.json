@@ -1,0 +1,40 @@
+{
+  "name": "g-scores",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "server": "prisma generate --schema prisma/schema.sqlite.prisma && tsx src/server/index.ts",
+    "build": "tsc && vite build",
+    "vercel-build": "prisma generate && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "db:generate": "prisma generate",
+    "db:generate:local": "prisma generate --schema prisma/schema.sqlite.prisma",
+    "db:deploy": "prisma migrate deploy",
+    "db:migrate": "prisma migrate dev --name init",
+    "db:import": "tsx src/server/scripts/importScores.ts",
+    "start": "prisma generate --schema prisma/schema.sqlite.prisma && tsx src/server/index.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "zod": "^3.25.56"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.15.30",
+    "@vitejs/plugin-react": "^4.5.1",
+    "prisma": "^6.9.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5"
+  }
+}

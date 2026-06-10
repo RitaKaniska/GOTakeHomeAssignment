@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model ExamScore {
+  sbd          String  @id
+  toan         Float?
+  nguVan       Float?  @map("ngu_van")
+  ngoaiNgu     Float?  @map("ngoai_ngu")
+  vatLi        Float?  @map("vat_li")
+  hoaHoc       Float?  @map("hoa_hoc")
+  sinhHoc      Float?  @map("sinh_hoc")
+  lichSu       Float?  @map("lich_su")
+  diaLi        Float?  @map("dia_li")
+  gdcd         Float?
+  maNgoaiNgu   String? @map("ma_ngoai_ngu")
+
+  @@map("exam_scores")
+}
