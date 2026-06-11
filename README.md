@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/e0079de5-288b-4481-bfaa-0d7d2c391298
+
 # G-Scores
 
 G-Scores is a full-stack TypeScript application for the 2024 Vietnam national high school exam dataset. It imports the raw CSV into a database with Prisma ORM, then exposes a responsive dashboard for score lookup, score-level reports, and top group-A students.
@@ -129,7 +133,6 @@ GET /api/top/group-a
 ```
 
 ## Demo Video
-
 
 
 ## Deploy App
