@@ -127,3 +127,13 @@ GET /api/scores/:sbd
 GET /api/reports/subjects
 GET /api/top/group-a
 ```
+
+## Demo Video
+
+
+
+## Deploy App
+
+```text
+https://webdev-intern-assignment-3-rose.vercel.app
+```
