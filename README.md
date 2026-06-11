@@ -1,4 +1,4 @@
-
+# Demo Video
 
 https://github.com/user-attachments/assets/e0079de5-288b-4481-bfaa-0d7d2c391298
 
@@ -131,8 +131,6 @@ GET /api/scores/:sbd
 GET /api/reports/subjects
 GET /api/top/group-a
 ```
-
-## Demo Video
 
 
 ## Deploy App
