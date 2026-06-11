@@ -1,5 +1,5 @@
 import { Prisma, type ExamScore, type PrismaClient } from "@prisma/client";
-import { SubjectCatalog, type ScoreLevelKey, type SubjectKey } from "../subjects";
+import { SubjectCatalog, type ScoreLevelKey, type SubjectKey } from "../subjects.js";
 
 export type SubjectReport = {
   key: SubjectKey;

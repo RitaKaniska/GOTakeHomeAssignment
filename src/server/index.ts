@@ -4,9 +4,9 @@ import express from "express";
 import { existsSync } from "node:fs";
 import { resolve } from "node:path";
 import { z } from "zod";
-import { prisma } from "./db";
-import { ExamScoreRepository } from "./repositories/examScoreRepository";
-import { SubjectCatalog } from "./subjects";
+import { prisma } from "./db.js";
+import { ExamScoreRepository } from "./repositories/examScoreRepository.js";
+import { SubjectCatalog } from "./subjects.js";
 
 const app = express();
 const port = Number(process.env.PORT ?? 3001);
